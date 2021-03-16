@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BV1-FR-VrT">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Game View Controller-->
+        <scene sceneID="tXr-a1-R10">
+            <objects>
+                <viewController id="BV1-FR-VrT" customClass="GameViewController" customModule="Project_3_Game_practice" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ibJ-8g-Iyn">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <sceneKitView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3Gx-iT-Ftn">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                            </sceneKitView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Очки: 0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tsC-CW-UAb">
+                                <rect key="frame" x="0.0" y="44" width="414" height="41"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="34"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="highlightedColor" red="0.37629779159999999" green="1" blue="0.34370922079999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Iwj-af-jso"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="tsC-CW-UAb" firstAttribute="leading" secondItem="Iwj-af-jso" secondAttribute="leading" id="4lt-2u-flh"/>
+                            <constraint firstItem="Iwj-af-jso" firstAttribute="trailing" secondItem="tsC-CW-UAb" secondAttribute="trailing" id="8Qu-oe-gpX"/>
+                            <constraint firstItem="tsC-CW-UAb" firstAttribute="top" secondItem="Iwj-af-jso" secondAttribute="top" id="NFC-gL-WeT"/>
+                            <constraint firstItem="3Gx-iT-Ftn" firstAttribute="top" secondItem="ibJ-8g-Iyn" secondAttribute="top" id="P8c-hi-ToI"/>
+                            <constraint firstItem="3Gx-iT-Ftn" firstAttribute="leading" secondItem="Iwj-af-jso" secondAttribute="leading" id="PL6-dg-Phi"/>
+                            <constraint firstAttribute="bottom" secondItem="3Gx-iT-Ftn" secondAttribute="bottom" id="Wgf-t3-fzz"/>
+                            <constraint firstItem="3Gx-iT-Ftn" firstAttribute="trailing" secondItem="Iwj-af-jso" secondAttribute="trailing" id="fDy-p7-0VA"/>
+                            <constraint firstItem="tsC-CW-UAb" firstAttribute="leading" secondItem="Iwj-af-jso" secondAttribute="leading" id="tkm-s0-fmc"/>
+                            <constraint firstItem="Iwj-af-jso" firstAttribute="trailing" secondItem="tsC-CW-UAb" secondAttribute="trailing" id="vH9-Xx-2W5"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="scnView" destination="3Gx-iT-Ftn" id="mW1-0n-Sn7"/>
+                        <outlet property="scoreLabel" destination="tsC-CW-UAb" id="THu-pG-jeZ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="SZV-WD-TEh" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-197.10144927536234" y="55.580357142857139"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
