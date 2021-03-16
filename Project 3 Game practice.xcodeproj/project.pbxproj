@@ -14,6 +14,20 @@
 		A35B7B8E25E2E77100549C28 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A35B7B8D25E2E77100549C28 /* Assets.xcassets */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXBuildRule section */
+		A3F5583B26015006001E945F /* PBXBuildRule */ = {
+			isa = PBXBuildRule;
+			compilerSpec = com.apple.compilers.proxy.script;
+			fileType = image.png;
+			inputFiles = (
+			);
+			isEditable = 1;
+			outputFiles = (
+			);
+			script = "# copypng\n";
+		};
+/* End PBXBuildRule section */
+
 /* Begin PBXFileReference section */
 		A35B7B8125E2E76D00549C28 /* Project 3 Game practice.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Project 3 Game practice.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A35B7B8425E2E76D00549C28 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -88,6 +102,7 @@
 				A35B7B7F25E2E76D00549C28 /* Resources */,
 			);
 			buildRules = (
+				A3F5583B26015006001E945F /* PBXBuildRule */,
 			);
 			dependencies = (
 			);
