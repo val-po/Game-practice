@@ -1,6 +1,6 @@
 # Game practice
 
-Game practice  with Air Fighter for MDA.
+Game practice with Air Fighter for MDA.
 
 ## Screenshoot
 
